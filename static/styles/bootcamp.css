@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*, *::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 1.2rem;
+}
+
+#bootcamp-barner {
+  text-align: center;
+  padding: 4rem 1.2rem;
+  background-color: #000080;
+  color: #eee;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../../assets/bg1.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("bg1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#bootcamp-barner p {
+  margin: 1em 0;
+}
+
+#bootcamp-barner button {
+  margin-top: 2em;
+  font-size: inherit;
+  padding: .4rem .8rem;
+  border: 2px solid #eee;
+  background-color: transparent;
+  border-radius: .4rem;
+  color: #eee;
+}
+
+.curriculum-barner { 
+  padding: 1.2rem 0;
+  background-color: #eee; 
+  border-radius: 8px;
+}
+
+.curriculum-barner button {
+  font-size: .8rem;
+  color: #000080;
+  padding: .4rem .8rem;
+  border: 2px solid #191970;
+  background-color: transparent;
+  margin-top: .5rem;
+}
+
+@media screen and (min-width: 758px) {
+  #cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#cards article {
+  margin: 1rem 0;
+}
+
+#cards article h2 {
+  margin-bottom: .8rem;
+  color: #000080;
+  font-size: .8rem;
+}
+
+#cards article .card {
+  margin: .4rem 0;
+}
+
+#cards article .card p {
+  font-size: .6rem;
+}
+
+@media screen and (min-width: 758px) {
+  #cards article .card p {
+    font-size: .55rem;
+  }
+}
+
+#cards article .card span {
+  color: #e6d604;
+}
+
+@media screen and (max-width: 758px) {
+  #cards article .card {
+    border: 2px solid #191970;
+    border-left: 0.3rem solid #000080;
+    padding: .4rem;
+    border-bottom-left-radius: .2rem;
+    border-top-left-radius: .2rem;
+  }
+}
+
+#other {
+  background-color: #eee;
+  text-align: center;
+}
+
+#other h2 {
+  color: #191970;
+  font-size: .8rem;
+}
+
+#other ul {
+  text-align: left;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#other ul li {
+  margin: .2rem 0;
+  font-size: .6rem;
+}
+
+#other button {
+  background-color: transparent;
+  padding: .4rem .8rem;
+  font-size: .6rem;
+  border-radius: .2rem;
+  outline: 0;
+  border: 2px solid #000080;
+  color: #191970;
+  margin: 1rem 0;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 1rem;
+  color: #191970;
+}
+
+@media screen and (min-width: 758px) {
+  #projects .holder {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: .6rem 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #projects .holder {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#projects .project-item {
+  text-align: left;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: .5rem 0;
+  border-radius: .5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px 0px #f3f1f1;
+          box-shadow: 0 0 20px 0px #f3f1f1;
+}
+
+#projects .project-item:hover {
+  -webkit-box-shadow: 0 0 20px -2px #dddbdb;
+          box-shadow: 0 0 20px -2px #dddbdb;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+#projects .project-item .number {
+  width: 80px;
+  background-color: #191970;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+#projects .project-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: .5rem;
+}
+
+#projects .project-item div p {
+  font-size: .6rem;
+}
+
+#requirement {
+  text-align: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8))), url("../../assets/ab.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%), url("../../assets/ab.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  color: #eee;
+}
+
+#requirement h3 {
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 758px) {
+  #requirement div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#requirement div aside {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+@media screen and (min-width: 758px) {
+  #requirement div aside {
+    min-height: 42vh;
+  }
+}
+
+#requirement div aside p {
+  font-size: .6rem;
+  text-align: left;
+}
+
+#requirement div aside ul {
+  text-align: left;
+  margin-top: .5rem;
+}
+
+#requirement div aside ul li {
+  font-size: .6rem;
+  list-style: circle;
+  margin-left: 1.2rem;
+}
+
+#requirement div aside .icons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#requirement div aside .icons img {
+  border-radius: 50%;
+  width: 50px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 758px) {
+  #terms {
+    padding: 2rem 3rem;
+    padding-bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+  }
+}
+
+#terms .category {
+  margin-bottom: .8rem;
+}
+
+#terms .category h3 {
+  margin-bottom: .5rem;
+  color: #191970;
+}
+
+#terms .category p {
+  font-size: .6rem;
+}
+
+@media screen and (min-width: 758px) {
+  #rewards {
+    background-image: url("../../assets/illustration-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  #rewards .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+#rewards h2 {
+  margin-bottom: .8rem;
+  text-align: center;
+  color: #191970;
+}
+
+#rewards h4 {
+  margin-bottom: .4rem;
+  font-size: .8rem;
+}
+
+#rewards p {
+  font-weight: bold;
+  margin-top: .8rem;
+  font-size: .8rem;
+}
+
+#rewards ul {
+  margin-top: .2rem;
+  padding-left: 1.2rem;
+}
+
+#rewards ul li {
+  list-style: circle;
+  font-size: .6rem;
+}
+
+#duration {
+  text-align: center;
+}
+
+#duration h2 {
+  margin-bottom: .5rem;
+  color: #191970;
+}
+
+#duration p {
+  font-size: .6rem;
+}
+
+#duration h4 {
+  margin: .5rem 0;
+  color: #e6d604;
+}
+
+@media screen and (min-width: 758px) {
+  #duration .grid-wrap {
+    background-image: url("../../assets/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 7rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #duration .grid-wrap {
+    padding: 0 7rem;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  footer {
+    -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  }
+}
+/*# sourceMappingURL=bootcamp.css.map */

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa Devs Conference</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'assets/icon.png')}} " type="image/x-icon">
+    <link rel="stylesheet" href=" {{url_for('static', filename = 'styles/header.css')}} " >
+    <link rel="stylesheet" href=" {{url_for('static', filename = 'styles/bootcamp.css')}} ">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles/footer.css')}}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <style>
+        .time-content{
+            display: flex; 
+            justify-content: center;
+            text-align: center;
+        } 
+        .time-item{
+            margin: 20px;
+        } 
+        @media screen and (max-width: 758px) {
+            .time-content{
+                display: grid; 
+                
+            } 
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>
+            Africa Devs Conf
+        </h1>
+        <input type="checkbox" id="menu-trigger">
+        <nav class="menu" id='menu'>
+            <ul>
+                <li>  Home </li>
+                <li> Speakers </li>
+                <li> Workshops </li>
+                <li> Sponsors </li> 
+                <li>Register Now! </li> 
+            </ul>
+        </nav>
+        <label for="menu-trigger" class="menu-trigger-label">
+            <span></span>
+        </label>
+    </header>
+    <!-- MAIN -->
+    
+        <section id="bootcamp-barner">
+            <h3> 
+                Africa Developers' Conference 2021 
+            </h3>
+            <p>June 2021</p>
+            <p> 
+                African Community Confrence Run By The Community
+            </p>
+            <button id="enroll">
+                <a href="{{url_for('Register')}}">
+                    Register Now! 
+                </a>    
+            </button>
+        </section>
+    
+    <section class="time"> 
+        <div class="time-content">
+        <div class="time-item">
+            <h4>
+                2 Days
+            </h4>
+        </div>
+        <div class="time-item">
+            <h4>
+                10 + Talks
+            </h4>
+        </div>
+        <div class="time-item">
+            <h4>
+                2 + Workshops 
+            </h4>
+        </div>
+        <div class="time-item">
+            <h4>
+                750 + Developers
+            </h4>
+        </div>
+        </div>
+     
+    </section>
+    <section id="projects">
+        <h2
+        data-aos="fade-up"
+        data-aos-duration="600">TOPICS</h2>
+        <div class="holder">
+            <div class="project-item"
+            data-aos="fade-up"
+            data-aos-duration="600">
+                <div class="number">1</div>
+                <div>
+                    <p class="project-para">
+                        Software Engineering 
+                    </p>
+                   
+                </div>
+            </div>
+    
+            <div class="project-item"
+                    data-aos="fade-up"
+                    data-aos-duration="600">
+                <div class="number">2</div>
+                <div>
+                    <p class="project-para"> 
+                        Data Science
+                    </p>
+                    
+                </div>
+            </div>
+    
+            <div class="project-item"
+                    data-aos="fade-up"
+                    data-aos-duration="600">
+                <div class="number">3</div>
+                <div>
+                    <p class="project-para"> 
+                        Machine Learning
+                    </p> 
+                    
+                </div>
+            </div>
+    
+            <div class="project-item"
+                    data-aos="fade-up"
+                    data-aos-duration="600">
+                <div class="number">4</div>
+                <div>
+                    <p class="project-para"> 
+                        Artificial Intelligence
+                    </p> 
+                    
+                </div>
+            </div>
+    
+            <div class="project-item"
+                    data-aos="fade-up"
+                    data-aos-duration="600">
+                <div class="number">5</div>
+                <div>
+                    <p class="project-para">
+                        African Tech Communities
+                    </p>
+                    
+                </div>
+                
+            </div> 
+            
+            <div class="project-item"
+                    data-aos="fade-up"
+                    data-aos-duration="600">
+                <div class="number">5</div>
+                <div>
+                    <p class="project-para">
+                        DevOps
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="other">
+        <h2
+        data-aos="fade-up"
+        data-aos-duration="600">INFO</h2>
+        <p
+        data-aos="fade-up"
+        data-aos-duration="600">Are you intrested in sponsoring the conference?</p>
+        <p
+        data-aos="fade-up"
+        data-aos-duration="600">Do you need more information about the conference?</p>
+        <button 
+        data-aos="fade-up"
+        data-aos-duration="600">Contact Us</button>
+    </section>
+    
+
+<section id="duration">
+		
+    <h2
+    data-aos="fade-up"
+    data-aos-duration="600">Africa Developers Summit</h2> 
+    <div class="grid-wrap"
+                data-aos="fade-up"
+                data-aos-duration="600"
+    >
+        <p>
+            The first tech summit focused on tech communities products and expert in Africa and  around the globe 
+        </p>
+        <p> 
+            Experts & talents from tech communities around the world are here at Africa Developers Conference sharing  their projects, journey/expirences of being in tech
+        </p> 
+        <br />
+
+        <p style="font-weight: bold;" > 
+            Don't miss it!
+        </p>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    
+    <footer>
+        <div>
+            <h2>
+                Africa Developers' Conference
+            </h2>
+            <p>Africa Developers' Conference  is a mutlitrack tech conference made by developers for developers.</p>
+        </div>
+
+        <div>
+            <h2>
+                Quick Links
+            </h2>
+            <ul>
+                <li> Home </li>
+                <li> Sponsors </li>
+                <li> Workshops </li>
+                <li> Twitter </li>
+                <li> Linkedin </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>
+                Work With ADC
+            </h2>
+            <ul>
+                <li> Become a Partner </li>
+                <li> Become a Mentor </li>
+                <li> Become a Speaker </li>
+                <li> Become a Sponsor </li>
+            </ul>
+        </div>
+        
+        <p class="copyright">
+            Copyright &copy2021 <a href="#">Africa Developers Conference</a>
+        </p>
+    </footer>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

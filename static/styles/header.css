@@ -1,0 +1,207 @@
+header {
+  background-color: midnightblue;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1.2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (min-width: 758px) {
+  header {
+    padding: 0 0.8rem;
+  }
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 758px) {
+  header .menu {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: midnightblue;
+    z-index: 100;
+    -webkit-transition: -webkit-transform .3s ease-in;
+    transition: -webkit-transform .3s ease-in;
+    transition: transform .3s ease-in;
+    transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  header .menu {
+    top: 0;
+  }
+}
+
+header .menu ul {
+  background: transparent;
+  margin: 1.2em auto;
+  border-radius: 6px;
+  text-align: center;
+  padding: .8em 0;
+}
+
+@media screen and (min-width: 758px) {
+  header .menu ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header .menu ul li {
+  text-transform: uppercase;
+  margin: .8em 0;
+  padding: .5em 0;
+  opacity: 0;
+  color: #eee;
+  position: relative;
+}
+
+@media screen and (min-width: 758px) {
+  header .menu ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    opacity: 1;
+    margin: 0 .4rem;
+    padding: 0;
+    font-size: .6rem;
+  }
+  header .menu ul li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 0 0 2px 2px;
+    background-color: #fff;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
+
+header .menu ul li:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 758px) {
+  header .menu ul li:hover {
+    background-color: navy;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  header .menu ul li:hover:before {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transition: -webkit-transform ease-in .3s;
+    transition: -webkit-transform ease-in .3s;
+    transition: transform ease-in .3s;
+    transition: transform ease-in .3s, -webkit-transform ease-in .3s;
+  }
+}
+
+header #menu-trigger {
+  display: none;
+}
+
+header #menu-trigger:checked ~ .menu {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+header #menu-trigger:checked ~ .menu li {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in .5s;
+  transition: opacity .2s ease-in .5s;
+}
+
+label {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 758px) {
+  label {
+    display: none;
+  }
+}
+
+label span {
+  height: 3px;
+  width: 24px;
+  background-color: white;
+  position: relative;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+label span:before, label span:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 24px;
+  background-color: white;
+}
+
+label span:before {
+  top: -7px;
+}
+
+label span:after {
+  top: 7px;
+}
+/*# sourceMappingURL=header.css.map */
